@@ -334,25 +334,25 @@
           if (isFire === true) {
             //// 🔥 EX07 si le joueur choisit une case où il a déjà tiré on affiche cette message,
             msg += "Vous avez déjà touché a cette position !";
-            const audio = new Audio("audio/goodShot.mp3");
+            const audio = new Audio("audio/goodShot.ogg");
             //// 🔥 EX13  un son du tir puis un son en cas de tir réussi
             audio.play();
             self.renderMap(true);
           } else {
             msg += "Touché !";
-            const audio = new Audio("audio/goodShot.m4a");
+            const audio = new Audio("audio/goodShot.ogg");
             audio.play();
             self.renderMap(true);
           }
         } else {
           if (isFire === true) {
             msg += "Vous avez déjà manqué votre tir à cette position !";
-            const audio = new Audio("audio/badShot.mp3");
+            const audio = new Audio("audio/badShot.ogg");
             audio.play();
             self.renderMap(false);
           } else {
             msg += "Manqué...";
-            const audio = new Audio("audio/badShot.mp3");
+            const audio = new Audio("audio/badShot.ogg");
             audio.play();
             self.renderMap(false);
           }
